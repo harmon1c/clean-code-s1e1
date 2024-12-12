@@ -4,19 +4,23 @@ body {
   color: #333;
   font-family: Lato, sans-serif;
 }
+
 ul {
   margin: 0;
   padding: 0;
 }
+
 .header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
+
 .header__img {
   width: 100%;
 }
+
 .header__link {
   font-family: fantasy, cursive;
 }
@@ -26,32 +30,39 @@ ul {
     text-align: center;
   }
 }
+
 .main {
   display: block;
   width: 500px;
-  margin: 0 auto 0;
+  margin: 0 auto;
 }
+
 .task__name {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
+
 .main__element-task-wrapper {
   display: flex;
 }
+
 .task__incomplete-list {
   margin: 0;
   padding: 0;
 }
+
 .task__incomplete-list-item,
 .task__completed-list-item,
 .task__list-title {
   list-style: none;
 }
+
 input,
 button {
   outline: none;
 }
+
 .task__btn-edit,
 .task__btn-delete,
 .task__btn-add {
@@ -63,10 +74,12 @@ button {
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
+
 .task__btn-edit,
 .task__btn-delete:hover {
   color: #3a3a3a;
 }
+
 /* Heading */
 .task__list-title,
 label[for="main__element-task"] {
@@ -78,6 +91,7 @@ label[for="main__element-task"] {
   margin: 0;
   text-transform: uppercase;
 }
+
 input[type="text"] {
   margin: 0;
   font-size: 18px;
@@ -90,6 +104,7 @@ input[type="text"] {
   font-family: Lato, sans-serif;
   color: #888;
 }
+
 input[type="text"]:focus {
   color: #333;
 }
@@ -112,26 +127,32 @@ label[for="main__element-task"] {
   justify-content: space-between;
   align-items: center;
 }
+
 .list-item > * {
   vertical-align: middle;
 }
+
 .list-item > input[type="checkbox"] {
   margin: 0 10px;
 }
+
 .list-item > label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
+
 .list-item > input[type="text"] {
   width: 226px;
 }
+
 .task__btn-delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
+
 .task__btn-delete img:hover {
   transform: rotateZ(0);
 }
@@ -146,10 +167,12 @@ label[for="main__element-task"] {
 .list-item input[type="text"] {
   display: none;
 }
+
 .edit-mode input[type="text"] {
   display: inline-block;
   width: 224px;
 }
+
 .edit-mode label {
   display: none;
 }
