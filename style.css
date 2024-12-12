@@ -22,7 +22,7 @@ ul {
 }
 
 @media (max-width:768px) {
-  .header { 
+  .header {
     text-align: center;
   }
 }
@@ -125,7 +125,7 @@ label[for="main__element-task"] {
   width: 226px;
 }
 .list-item > input[type="text"] {
-  width: 226px
+  width: 226px;
 }
 .task__btn-delete img {
   height: 2em;
@@ -144,12 +144,12 @@ label[for="main__element-task"] {
 
 /* Edit Task */
 .list-item input[type="text"] {
-  display:none
+  display: none;
 }
 .edit-mode input[type="text"] {
-  display:inline-block;
-  width:224px;
+  display: inline-block;
+  width: 224px;
 }
 .edit-mode label {
-  display:none;
+  display: none;
 }
