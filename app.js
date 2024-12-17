@@ -2,10 +2,10 @@
 //Solution: Add interactivity so the user can manage daily tasks.
 //Break things down into smaller steps and take each step at a time.
 
-var taskInput=document.getElementById("main__element-task");//Add a new task.
-var addButton=document.getElementsByTagName("button")[0];//first button
-var incompleteTaskHolder=document.getElementById("task__incomplete-list");//ul of #task__incomplete-list
-var completedTasksHolder=document.getElementById("task__completed-list");//completed-tasks
+var taskInput=document.querySelector(".main__element-task-field");//Add a new task.
+var addButton=document.querySelector(".task__btn-add");//first button
+var incompleteTaskHolder=document.querySelector(".task__incomplete-list");//ul of #task__incomplete-list
+var completedTasksHolder=document.querySelector(".task__completed-list");//completed-tasks
 
 //New task list item
 var createNewTaskElement=function(taskString){
@@ -28,8 +28,9 @@ var createNewTaskElement=function(taskString){
     listItem.className='list-item';
 
     checkBox.type="checkbox";
+    checkBox .className="task__input-checkbox";
     editInput.type="text";
-    editInput.className="task__name";
+    editInput.className="task__input";
 
     editButton.innerText="Edit";
     editButton.className="task__btn-edit";
@@ -63,8 +64,8 @@ var editTask=function(){
     console.log("Change 'edit' to 'save'");
 
     var listItem=this.parentNode;
-    var editInput=listItem.querySelector('input[type=text]');
-    var label=listItem.querySelector("label");
+    var editInput=listItem.querySelector('.task__input');
+    var label=listItem.querySelector(".task__name");
     var editBtn=listItem.querySelector(".task__btn-edit");
     var containsClass=listItem.classList.contains("edit-mode");
     //If class of the parent is .editmode
@@ -119,7 +120,7 @@ addButton.addEventListener("click",ajaxRequest);
 var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
     console.log("bind list item events");
 //select ListItems children
-    var checkBox=taskListItem.querySelector("input[type=checkbox]");
+    var checkBox=taskListItem.querySelector(".task__input-checkbox");
     var editButton=taskListItem.querySelector("button.task__btn-edit");
     var deleteButton=taskListItem.querySelector("button.task__btn-delete");
     //Bind editTask to edit button.
