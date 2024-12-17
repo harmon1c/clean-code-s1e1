@@ -169,11 +169,11 @@
   display: none;
 }
 
-.edit-mode .task__input {
+.task__item_edit-mode .task__input {
   display: inline-block;
   width: 224px;
 }
 
-.edit-mode .task__name {
+.task__item_edit-mode .task__name {
   display: none;
 }
